@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="../src/output.css" />
+        <title>MEC Enterprise</title>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body class=" bg-gray-300 h-screen">
+        <header class="mx-auto p-4 bg-white">
+            <nav class="flex justify-between items-center w-[92%] mx-auto ">
+                <div>
+                    <img class="w-16" src="./image/logo.jpg" alt="logo">
+                </div>
+                <div class="nav-link md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                    <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                        <li><a class="hover:text-red-900 capitalize" href="index.html">home</a></li>
+                        <li><a class="hover:text-red-900 capitalize" href="contact.html">contact us</a></li>
+                        <li><a class="hover:text-red-900" href="#">Resource</a></li>
+                        <li><a class="hover:text-red-900" href="#">Developers</a></li>
+                        <li><a class="hover:text-red-900" href="#">Pricing</a></li>
+                </div>
+                <div class="flex items-center gap-6">
+                    <a href="./signup.html"><button class="bg-sky-500 text-white px-5 py-2 rounded-full hover:bg-sky-600"> Sign in</button></a>
+                    <a href="./login.html"><button class="bg-sky-500 text-white px-5 py-2 rounded-full hover:bg-sky-600">Login</button></a>
+                    <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+                </div>
+            </nav>
+        </header>
+        <!--login body-->
+        <div class="min-h-screen">
+            <div class="container mx-auto py-40">
+                <div class="flex flex-col lg:flex-row  w-10/12 rounded-lg shadow-lg overflow-hidden bg-white mx-auto">
+                    <div class="w-full lg:w-1/2 flex flex-col justify-center items-center p-12 bg-no-repeat bg-cover bg-center" style="background-image: url(./image/work.jpg);">
+                        <h1 class="font-bold text-white text-3xl">welcome</h1>
+                        <p class="bg-gray-700 text-white p-5 rounded-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta exercitationem, aliquam accusantium consequatur sapiente sit error ullam debitis ipsum molestias quaerat quod a, quisquam consequuntur cum eius nobis animi autem.</p>
+                    </div>
+                    <div class="w-full lg:w-1/2 py-16 px-12"> 
+                        <h2 class="text-3xl mb-4 font-bold uppercase">login</h2>
+                        <p class="text-xl capitalize text-center">login into your account</p>
+                        <form action="#">
+                            <div class="grid grid-cols-1 mt-5">
+                                <label>Email</label>
+                                <input type="text" name="email" placeholder="Email" class="mt-2 p-2 rounded-md border-none outline-none focus:ring-2 focus:ring-[#FFCDA3]">
+                            </div>
+                            <div class="grid grid-cols-1 mt-5">
+                                <label>Password</label>
+                                <input type="password" placeholder="Password" class="mt-2 p-2 rounded-md border-none outline-none focus:ring-2 focus:ring-[#FFCDA3]">
+                            </div>
+                            <div class="mt-3 text-blue-600">
+                                <a href="#">forgotten password</a>
+                            </div>
+                            <div class="grid grid-cols-1">
+                                <button onclick="button()" class="bg-blue-600 mt-3 p-3 rounded-md text-white uppercase tracking-wide">login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!--footer-->
+         <footer class="bg-gray-900 text-white">
+            <div class="container mx-auto py-14 px-6">
+                <div class="grid md:grid-cols-12 grid-cols-1 gap-7">
+                    <div class="lg:col-span-4 col-span-12">
+                        <a href="#">
+                            <img class="h-12" src="./image/logo.jpg" alt="logo">
+                        </a>
+                        <p class="mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In illo molestiae explicabo qui autem id voluptatem maiores delectus iste, atque itaque optio esse fuga ullam odio! Asperiores ullam aliquid ab!</p>
+                        <div class="space-x-3 mt-4">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-whatsapp"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-2 md:col-span-4 col-span-12">
+                        <h4 class="tracking-wider font-semibold capitalize">company</h4>
+                        <ul class="list-none mt-5 space-y-2">
+                            <li><a href="index.html" class="hover:text-gray-400 transition-all duration-500 ease-in-out capitalize">home</a></li>
+                            <li><a href="" class="hover:text-gray-400 transition-all duration-500 ease-in-out capitalize">contact us</a></li>
+                            <li><a href="" class="hover:text-gray-400 transition-all duration-500 ease-in-out capitalize">about us</a></li>
+                            <li><a href="" class="hover:text-gray-400 transition-all duration-500 ease-in-out capitalize">price</a></li>
+                        </ul>
+                    </div>
+                    <div class="lg:col-span-3 md:col-span-4 col-span-12">
+                        <h3 class="tracking-wide font-semibold capitalize">important links</h3>
+                        <ul class="mt-5 list-none space-y-2">
+                            <li>
+                                <a href="#" class="hover:text-gray-300 transition-all duration-500 ease-in-out capitalize">terms of service</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-gray-300 transition-all duration-500 ease-in-out capitalize">privacy policy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-gray-300 transition-all duration-500 ease-in-out capitalize">documentation</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="lg:col-span-3 md:col-span-4 col-span-12">
+                        <h5 class="tracking-wide font-semibold capitalize">newsletter</h5>
+                        <p class="mt-3">sing up and recieve the latest tips via email.</p>
+                        <form>
+                            <div class="my-3">
+                                <label for="email-input">write your email<span class="text-red-700"> *</span></label>
+                                <input type="email" placeholder="email" class="flex w-full rounded-md py-2 px-3 mt-3 h-10 outline-none bg-transparent border-[#FFCDA3] focus:ring-[#FFCDBB] focus:ring-2">
+                                <input type="submit" class="py-2 px-5 mt-4 w-full rounded-md tracking-wide border duration-500 text-base text-center bg-[#FFCDA3] hover:bg-[#FFCDBB] border-[#FFCDA3] self-end">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-slate-700">
+                <div class="md:text-left text-center container mx-auto py-7 px-6">
+                    <p>
+                        &copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                        MEC_ENTERPRICES
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+
+            const navLinks = document.querySelector('.nav-link')
+            function onToggleMenu(e){
+                e.name = e.name === 'menu' ? 'close' : 'menu'
+                navLinks.classList.toggle('top-[9%]')
+            }
+        </script>
+        <script src="index.js"></script>
+    </body>
+</html>

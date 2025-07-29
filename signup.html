@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="../src/output.css" />
+        <title>MEC Enterprise</title>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body class="bg-gray-300 h-screen"> 
+        <header class="mx-auto p-4 bg-white ">
+            <nav class="flex justify-between items-center w-[92%] mx-auto ">
+                <div>
+                    <img class="w-16" src="./image/logo.jpg" alt="logo">
+                </div>
+                <div class="nav-link md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                    <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                        <li><a class="hover:text-red-900 capitalize" href="index.html">home</a></li>
+                        <li><a class="hover:text-red-900 capitalize" href="contact.html">contact us</a></li>
+                        <li><a class="hover:text-red-900" href="#">Resource</a></li>
+                        <li><a class="hover:text-red-900" href="#">Developers</a></li>
+                        <li><a class="hover:text-red-900" href="#">Pricing</a></li>
+                </div>
+                <div class="flex items-center gap-6">
+                    <a href="./signup.html"><button class="bg-sky-500 text-white px-5 py-2 rounded-full hover:bg-sky-600">Sign in</button></a>
+                    <a href="./login.html"><button class="bg-sky-500 text-white px-5 py-2 rounded-full hover:bg-sky-600">Login</button></a>
+                    <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+                </div>
+            </nav>
+        </header>
+
+        <!--sign up body-->
+        <div class="min-h-screen">
+            <div class="container mx-auto py-40">
+                <div class="flex flex-col lg:flex-row w-10/12 lg:w-8/12 bg-white rounded-xl shadow-lg overflow-hidden mx-auto">
+                    <div class="w-full lg:w-1/2 flex flex-col justify-center items-center p-12 bg-no-repeat bg-cover bg-center text-white" style="background-image: url(./image/work.jpg);">
+                        <h1 class="font-bold text-3xl">welcome</h1>
+                        <div>
+                            <p class="bg-gray-700 p-12 rounded-md">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat harum nisi, molestias omnis vero sunt saepe incidunt vitae eveniet laudantium molestiae ut sit nihil debitis! Deleniti quam a animi minima.</p>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2 py-16 px-12">
+                        <h2 class="text-3xl mb-4 font-bold uppercase">register</h2>
+                        <p class="mb-4">create an account it is free, and also takes up to a minute</p>
+                        <!--form body-->
+                        <form action="#">
+                            <div class="grid grid-cols-2 gap-5">
+                                <input type="text" placeholder="First name" class="border focus:ring-2 focus:ring-[#FFCDA3] py-1 px-3 outline-none">
+                                <input type="text" placeholder="Surname" class="border focus:ring-2 focus:ring-[#FFCDA3] outline-none py-1 px-3">
+                            </div>
+                                <div class="mt-5">
+                                    <input type="email" placeholder="Email" class="border focus:ring-2 focus:ring-[#FFCDA3] outline-none py-1 px-3 w-full">
+                                </div>
+                                <div class="mt-5">
+                                    <input type="number" placeholder="Whatsapp number" class="border focus:ring-2 focus:ring-[#FFCDA3] outline-none py-1 px-3 w-full">
+                                </div>
+                                <div class="mt-5">
+                                    <input type="password" placeholder="password" class="border focus:ring-2 focus:ring-[#FFCDA3] outline-none py-1 px-3 w-full">
+                                </div>
+                                <div class="mt-5">
+                                    <input type="password" placeholder="Confirm password" class="border focus:ring-2 focus:ring-[#FFCDA3] outline-none py-1 px-3 w-full">
+                                </div>
+                                <div class="mt-3">
+                                    <input type="checkbox" class="border border-gray-400">
+                                    <span>
+                                        I accept the <a href="#" class="text-blue-500 font-semibold">Terms of Use</a> & <a href="#"  class="text-blue-500 font-semibold">Privacy Policy</a>
+                                    </span>
+                                </div>
+                                <div class="mt-3">
+                                    <button class="w-full bg-blue-500 font-bold text-white py-2 px-6 rounded-lg tracking-wider uppercase focus:bg-blue-800 hover:bg-blue-600">signup</button>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!--footer-->
+         <footer class="bg-gray-900 text-white">
+            <div class="container mx-auto py-14 px-6">
+                <div class="grid md:grid-cols-12 grid-cols-1 gap-7">
+                    <div class="lg:col-span-4 col-span-12">
+                        <a href="#">
+                            <img class="h-12" src="./image/logo.jpg" alt="logo">
+                        </a>
+                        <p class="mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In illo molestiae explicabo qui autem id voluptatem maiores delectus iste, atque itaque optio esse fuga ullam odio! Asperiores ullam aliquid ab!</p>
+                        <div class="space-x-3 mt-4">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-whatsapp"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-2 md:col-span-4 col-span-12">
+                        <h4 class="tracking-wider font-semibold capitalize">company</h4>
+                        <ul class="list-none mt-5 space-y-2">
+                            <li><a href="" class="hover:text-gray-400 transition-all duration-500 ease-in-out capitalize">home</a></li>
+                            <li><a href="" class="hover:text-gray-400 transition-all duration-500 ease-in-out capitalize">contact us</a></li>
+                            <li><a href="" class="hover:text-gray-400 transition-all duration-500 ease-in-out capitalize">about us</a></li>
+                            <li><a href="" class="hover:text-gray-400 transition-all duration-500 ease-in-out capitalize">price</a></li>
+                        </ul>
+                    </div>
+                    <div class="lg:col-span-3 md:col-span-4 col-span-12">
+                        <h3 class="tracking-wide font-semibold capitalize">important links</h3>
+                        <ul class="mt-5 list-none space-y-2">
+                            <li>
+                                <a href="#" class="hover:text-gray-300 transition-all duration-500 ease-in-out capitalize">terms of service</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-gray-300 transition-all duration-500 ease-in-out capitalize">privacy policy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-gray-300 transition-all duration-500 ease-in-out capitalize">documentation</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="lg:col-span-3 md:col-span-4 col-span-12">
+                        <h5 class="tracking-wide font-semibold capitalize">newsletter</h5>
+                        <p class="mt-3">sing up and recieve the latest tips via email.</p>
+                        <form>
+                            <div class="my-3">
+                                <label for="email-input">write your email<span class="text-red-700"> *</span></label>
+                                <input type="email" placeholder="email" class="flex w-full rounded-md py-2 px-3 mt-3 h-10 outline-none bg-transparent border-[#FFCDA3] focus:ring-[#FFCDBB] focus:ring-2">
+                                <input type="submit" class="py-2 px-5 mt-4 w-full rounded-md tracking-wide border duration-500 text-base text-center bg-[#FFCDA3] hover:bg-[#FFCDBB] border-[#FFCDA3] self-end">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-slate-700">
+                <div class="md:text-left text-center container mx-auto py-7 px-6">
+                    <p>
+                        &copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                        MEC_ENTERPRICES
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+        <script>
+            const navLinks = document.querySelector('.nav-link')
+            function onToggleMenu(e){
+                e.name = e.name === 'menu' ? 'close' : 'menu'
+                navLinks.classList.toggle('top-[9%]')
+            }
+        </script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    </body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="../src/output.css" />
+        <title>OMW Luxury</title>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind via CDN -->
+
+    </head>
+    <body class=" bg-gray-300 h-screen">
+        <header class="mx-auto p-4 bg-white">
+            <nav class="flex justify-between items-center w-[92%] mx-auto ">
+                <div>
+                    <img class="w-16" src="./image/logo.jpg" alt="logo">
+                </div>
+                <div class="nav-link md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                    <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                        <li><a class="hover:text-red-900 capitalize" href="index.html">home</a></li>
+                        <li><a class="hover:text-red-900 capitalize" href="contact.html">contact us</a></li>
+                        <li><a class="hover:text-red-900" href="#">Shopping Room</a></li>
+                        <li><a class="hover:text-red-900" href="#">About Us</a></li>
+                        <li><a class="hover:text-red-900" href="#">Profile</a></li>
+                        
+                </div>
+                <div class="flex items-center gap-6">
+                    <img class="w-10" src="./image/cart.png" alt="logo">
+                    <a href="./signup.html"><button class="bg-sky-500 text-white px-5 py-2 rounded-full hover:bg-sky-600"> Sign in</button></a>
+                    <a href="./login.html"><button class="bg-sky-500 text-white px-5 py-2 rounded-full hover:bg-sky-600">Login</button></a>
+                    <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+                </div>
+            </nav>
+        </header>
+        <!--main-->
+        <main>
+            <div class="bg-gray-100 flex">
+                <div class="px-8 py-8 max-w-md mx-auto sm:max-w-xl lg:max-w-full lg:w-1/2 lg:py-24 lg:px-12">
+                    <div class="xl:max-w-lg xl:ml-auto">
+                    <img class="rounded-md shadow-md sm:h-64 sm:w-full sm:object-cover sm:object-center lg:hidden" src="./image/work.jpg" alt="working picture">
+                    <h1 class="mt-3 text-2xl text-gray-900 font-bold capitalize leading-8 sm:mt-4 sm:text-4xl lg:text-3xl">You can buy from anywhere in the Country.<br>
+                        <span class="text-blue-700">OMW BRAND.</span>
+                    </h1>
+                    <p class="mt-2 sm:text-xl sm:mt-4 leading-8">Every piece in our collection is thoughtfully designed to blend comfort, quality, and originality. 
+                        We’re inspired by real people living real lives—moving through cities, creating, exploring, building their future one step at a time. 
+                        That’s why our designs are rooted in versatility: wearable staples, bold details, and silhouettes that move with you.</p>
+                    <div class="mt-3">
+                        <a href="#" class="btn">more inform...</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="hidden lg:block justify-end lg:w-1/2 lg:relative">
+                    <img class="absolute inset-0 w-full h-full object-cover object-center" src="./image/work.jpg" alt="working picture">
+                </div>
+            </div>
+        </main>
+        <section>
+            <div>
+                <div class="max-w-7xl mx-auto py-8 px-8">
+                    <h2 class="text-3xl font-bold text-gray-900 capitalize hr">popular designes</h2>
+                    <p class="text-xl text-gray-600">A section of where you can choose the type of designe of your choice</p>
+                    <div class="mx-4 sm:grid grid-cols-3 gap-4">
+                        <div class="mt-6 w-full ">
+                            <div class="bg-white rounded overflow-hidden shadow-md">
+                                <img class="sm:h-96 w-full" src="./image/T-shirt.jpg" alt="T-shirt">
+                                <div class="text-center">
+                                    <h3 class="lg:text-2xl   font-bold font-serif ">T-shirt</h3>
+                                    <p class="lg:text-xl font-semibold text-gray-600">Price: <span class="text-black font-bold">$300</span></p>
+                                    <div class="mb-1">
+                                        <p class="add text-green-600 font-bold"></p>
+                                        <a class="btn-chart" >Purchase</a>
+                                        <a href="#" >Preview</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-6 w-full ">
+                            <div class="bg-white rounded overflow-hidden shadow-md">
+                                <img src="./image/korean hoodie.jpg" alt="korean hoodie">
+                                <div class="text-center">
+                                    <h3 class="lg:text-2xl font-bold font-serif ">Korean Hoodie</h3>
+                                    <p class="lg:text-xl font-semibold text-gray-600">Price: <span class="text-black font-bold">$400</span></p>
+                                    <div class="mb-2">
+                                        <a class="btn-chart" href="#">Purchase</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="mt-6 w-full ">
+                            <div class="bg-white rounded overflow-hidden shadow-md">
+                                <img class="sm:h-96 w-full" src="./image/designers polo.jpg" alt="designe">
+                                <div class="text-center">
+                                    <h3 class="lg:text-2xl font-bold font-serif ">Korean Hoodie</h3>
+                                    <p class="lg:text-xl font-semibold text-gray-600">Price: <span class="text-black font-bold">$400</span></p>
+                                    <div class="mb-2">
+                                        <a class="btn-chart" href="#">Purchase</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6 w-full ">
+                            <div class="bg-white rounded overflow-hidden shadow-md">
+                                <img src="./image/hoodie.jpg" alt=" hoodie">
+                                <div class="text-center">
+                                    <h3 class="lg:text-2xl font-bold font-serif ">Korean Hoodie</h3>
+                                    <p class="lg:text-xl font-semibold text-gray-600">Price: <span class="text-black font-bold">$400</span></p>
+                                    <div class="mb-2">
+                                        <a class="btn-chart" href="#">Purchase</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6 w-full ">
+                            <div class="bg-white rounded overflow-hidden shadow-md">
+                                <img src="./image/full set.jpg" alt="full set">
+                                <div class="text-center">
+                                    <h3 class="lg:text-2xl font-bold font-serif ">Korean Hoodie</h3>
+                                    <p class="lg:text-xl font-semibold text-gray-600">Price: <span class="text-black font-bold">$400</span></p>
+                                    <div class="mb-2">
+                                        <a class="btn-chart" href="#">Purchase</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6 w-full ">
+                            <div class="bg-white rounded overflow-hidden shadow-md">
+                                <img src="./image/men polo.jpg" alt="men polo">
+                                <div class="text-center">
+                                    <h3 class="lg:text-2xl font-bold font-serif ">Korean Hoodie</h3>
+                                    <p class="lg:text-xl font-semibold text-gray-600">Price: <span class="text-black font-bold">$400</span></p>
+                                    <div class="mb-2">
+                                        <a class="btn-chart" href="#">Purchase</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--footer-->
+        <footer class="bg-gray-900 text-white">
+            <div class="container mx-auto py-14 px-6">
+                <div class="grid md:grid-cols-12 grid-cols-1 gap-7">
+                    <div class="lg:col-span-4 col-span-12">
+                        <a href="#">
+                            <img class="h-12" src="./image/logo.jpg" alt="logo">
+                        </a>
+                        <p class="mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In illo molestiae explicabo qui autem id voluptatem maiores delectus iste, atque itaque optio esse fuga ullam odio! Asperiores ullam aliquid ab!</p>
+                        <div class="space-x-3 mt-4">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-whatsapp"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-2 md:col-span-4 col-span-12">
+                        <h4 class="tracking-wider font-semibold capitalize">company</h4>
+                        <ul class="list-none mt-5 space-y-2">
+                            <li><a href="" class="hover:text-gray-400 transition-all duration-500 ease-in-out capitalize">home</a></li>
+                            <li><a href="" class="hover:text-gray-400 transition-all duration-500 ease-in-out capitalize">contact us</a></li>
+                            <li><a href="" class="hover:text-gray-400 transition-all duration-500 ease-in-out capitalize">about us</a></li>
+                            <li><a href="" class="hover:text-gray-400 transition-all duration-500 ease-in-out capitalize">price</a></li>
+                        </ul>
+                    </div>
+                    <div class="lg:col-span-3 md:col-span-4 col-span-12">
+                        <h3 class="tracking-wide font-semibold capitalize">important links</h3>
+                        <ul class="mt-5 list-none space-y-2">
+                            <li>
+                                <a href="#" class="hover:text-gray-300 transition-all duration-500 ease-in-out capitalize">terms of service</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-gray-300 transition-all duration-500 ease-in-out capitalize">privacy policy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-gray-300 transition-all duration-500 ease-in-out capitalize">documentation</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="lg:col-span-3 md:col-span-4 col-span-12">
+                        <h5 class="tracking-wide font-semibold capitalize">newsletter</h5>
+                        <p class="mt-3">sing up and recieve the latest tips via email.</p>
+                        <form>
+                            <div class="my-3">
+                                <label for="email-input">write your email<span class="text-red-700"> *</span></label>
+                                <input type="email" placeholder="email" class="flex w-full rounded-md py-2 px-3 mt-3 h-10 outline-none bg-transparent border-[#FFCDA3] focus:ring-[#FFCDBB] focus:ring-2">
+                                <input type="submit" class="py-2 px-5 mt-4 w-full rounded-md tracking-wide border duration-500 text-base text-center bg-[#FFCDA3] hover:bg-[#FFCDBB] border-[#FFCDA3] self-end">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-slate-700">
+                <div class="md:text-left text-center container mx-auto py-7 px-6">
+                    <p>
+                        &copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                        MEC_ENTERPRICES
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <script>
+            const navLinks = document.querySelector('.nav-link')
+            function onToggleMenu(e){
+                e.name = e.name === 'menu' ? 'close' : 'menu'
+                navLinks.classList.toggle('top-[9%]')
+            }
+        </script>
+        <script src="./purchase.js"></script>
+    </body>
+</html>
