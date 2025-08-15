@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shopping</title>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind via CDN -->
@@ -18,22 +18,25 @@
                 class="nav-link md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
                 <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                     <li><a class="hover:text-red-900 capitalize" href="index.html">home</a></li>
-                    <li><a class="hover:text-red-900 capitalize" href="contact.html">contact us</a></li>
-                    <li><a class="hover:text-red-900" href="#">Shopping Room</a></li>
-                    <li><a class="hover:text-red-900" href="#">About Us</a></li>
-                    <li><a class="hover:text-red-900" href="#">Profile</a></li>
+                    <li><a class="hover:text-red-900 capitalize" href="">Slides</a></li>
+                    <li><a class="hover:text-red-900 capitalize" href="#">headwears</a></li>
+                    <li><a class="hover:text-red-900 capitalize" href="#">tops</a></li>
+                    <li><a class="hover:text-red-900 capitalize" href="#">hoodies</a></li>
+                    <li><a class="hover:text-red-900 capitalize" href="#">pants</a></li>
+                    <li><a class="hover:text-red-900 capitalize" href="#">joggers</a></li>
+                    <li><a class="hover:text-red-900 capitalize" href="#">track suits</a></li>
+                    <li><a class="hover:text-red-900 capitalize" href="#">shorts</a></li>
 
             </div>
             <div class="flex items-center gap-6">
                 <ion-icon name="cart-outline"></ion-icon>
-                <a href="./signup.html"><button
-                        class="bg-sky-500 text-white px-5 py-2 rounded-full hover:bg-sky-600">SignUp</button></a>
                 <a href="./login.html"><button
-                        class="bg-sky-500 text-white px-5 py-2 rounded-full hover:bg-sky-600">Login</button></a>
+                        class="bg-black text-white px-5 py-2 rounded-md hover:shadow-lg">Login</button></a>
                 <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer lg:hidden"></ion-icon>
             </div>
         </nav>
     </header>
+    <hr>
 
 
 
@@ -42,7 +45,7 @@
         const navLinks = document.querySelector('.nav-link')
         function onToggleMenu(e) {
             e.name = e.name === 'menu' ? 'close' : 'menu'
-            navLinks.classList.toggle('top-[9%]')
+            navLinks.classList.toggle('top-[10%]')
         }
     </script>
     <script src="./purchase.js"></script>
