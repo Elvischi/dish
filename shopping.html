@@ -8,9 +8,18 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind via CDN -->
 </head>
-<body>
-    <header class="mx-auto p-4 bg-white">
-        <nav class="flex justify-between items-center w-[92%] mx-auto ">
+<body  class="mx-auto p-4 bg-white">
+     <div class="mt-4 mb-2">
+            <h2 class="flex justify-center text-3xl font-bold text-gray-900 capitalize hr">
+                popular designes
+            </h2>
+                <p class="flex justify-center text-xl text-gray-600">
+                    A section of where you can choose the type of designe of your choice
+                </p>
+        </div><hr>
+
+    <header>
+        <nav class="flex justify-between items-center w-[92%] mx-auto mt-4 mb-2">
             <div>
                 <img class="w-20" src="./image/logo2.jpg" alt="logo">
             </div>
@@ -26,10 +35,10 @@
                     <li><a class="hover:text-red-900 capitalize" href="#">joggers</a></li>
                     <li><a class="hover:text-red-900 capitalize" href="#">track suits</a></li>
                     <li><a class="hover:text-red-900 capitalize" href="#">shorts</a></li>
-
+                </ul>
             </div>
+            <ion-icon name="cart-outline"></ion-icon>
             <div class="flex items-center gap-6">
-                <ion-icon name="cart-outline"></ion-icon>
                 <a href="./login.html"><button
                         class="bg-black text-white px-5 py-2 rounded-md hover:shadow-lg">Login</button></a>
                 <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer lg:hidden"></ion-icon>
@@ -37,6 +46,79 @@
         </nav>
     </header>
     <hr>
+    <main class="mx-auto p-4 bg-white">
+        <div class="w-[92%] mx-auto py-4">
+            <h1 class="flex justify-center font-bold text-2xl">TOPS</h1>
+        </div><hr>
+        <div class="mx-4 sm:grid grid-cols-4 gap-4">
+            <!--first row-->
+            <div class="mt-6 w-full ">
+                <div class="bg-white rounded overflow-hidden shadow-md">
+                     <img class="sm:h-96 w-full" src="./image/skull.jpeg" alt="skull top">
+                        <div class="text-center">
+                            <h3 class="lg:text-2xl   font-bold font-serif ">T-shirt</h3>
+                            <p class="lg:text-xl font-semibold text-gray-600">Price: <span
+                                class="text-black font-bold">$300</span></p>
+                                <div class="mb-1">
+                                    <p class="add text-green-600 font-bold"></p>
+                                    <a href="shopping.html"
+                                        class="inline-block bg-black py-2 px-8 text-white rounded-md tracking-wider font-semibold hover:bg-white hover:text-black hover:shadow-lg">purchase</a>
+                                    <!--<a >Preview</a>-->
+                                </div>
+                        </div>
+                </div>
+            </div>
+            <div class="mt-6 w-full ">
+                <div class="bg-white rounded overflow-hidden shadow-md">
+                     <img class="sm:h-96 w-full" src="./image/omw.jpg" alt="OMW top">
+                        <div class="text-center">
+                            <h3 class="lg:text-2xl   font-bold font-serif ">T-shirt</h3>
+                            <p class="lg:text-xl font-semibold text-gray-600">Price: <span
+                                class="text-black font-bold">$300</span></p>
+                                <div class="mb-1">
+                                    <p class="add text-green-600 font-bold"></p>
+                                    <a href="shopping.html"
+                                        class="inline-block bg-black py-2 px-8 text-white rounded-md tracking-wider font-semibold hover:bg-white hover:text-black hover:shadow-lg">Preview</a>
+                                    <!--<a >Preview</a>-->
+                                </div>
+                        </div>
+                </div>
+            </div>
+            <div class="mt-6 w-full ">
+                <div class="bg-white rounded overflow-hidden shadow-md">
+                     <img class="sm:h-96 w-full" src="./image/under black.jpeg" alt="under black">
+                        <div class="text-center">
+                            <h3 class="lg:text-2xl   font-bold font-serif ">T-shirt</h3>
+                            <p class="lg:text-xl font-semibold text-gray-600">Price: <span
+                                class="text-black font-bold">$300</span></p>
+                                <div class="mb-1">
+                                    <p class="add text-green-600 font-bold"></p>
+                                    <a href="shopping.html"
+                                        class="inline-block bg-black py-2 px-8 text-white rounded-md tracking-wider font-semibold hover:bg-white hover:text-black hover:shadow-lg">Preview</a>
+                                    <!--<a >Preview</a>-->
+                                </div>
+                        </div>
+                </div>
+            </div>
+            <div class="mt-6 w-full ">
+                <div class="bg-white rounded overflow-hidden shadow-md">
+                     <img class="sm:h-96 w-full" src="./image/omw update black.jpeg" alt="omw update black">
+                        <div class="text-center">
+                            <h3 class="lg:text-2xl   font-bold font-serif ">T-shirt</h3>
+                            <p class="lg:text-xl font-semibold text-gray-600">Price: <span
+                                class="text-black font-bold">$300</span></p>
+                                <div class="mb-1">
+                                    <p class="add text-green-600 font-bold"></p>
+                                    <a href="shopping.html"
+                                        class="inline-block bg-black py-2 px-8 text-white rounded-md tracking-wider font-semibold hover:bg-white hover:text-black hover:shadow-lg">Preview</a>
+                                    <!--<a >Preview</a>-->
+                                </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
 
 
 
