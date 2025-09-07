@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+.bt-nav{
+    @apply bg-black text-white px-5 py-2 rounded-md hover:bg-white hover:text-black hover:shadow-lg hover:outline-black hover:outline-2;
+}
+
+.btn-outline{
+    @apply bg-black text-white px-12 py-2 rounded-sm hover:bg-white hover:text-black hover:shadow-lg hover:outline-black hover:outline-2;
+}
+
+.para-style{
+    @apply text-green-600 font-semibold lg:text-xl;
+}
+.container-size{
+    @apply mt-6 w-full;
+}
+.sub-container-size{
+    @apply bg-white rounded overflow-hidden shadow-md;
+}
+.image-size{
+    @apply sm:h-96 w-full; 
+}
+.cloth-name{
+    @apply lg:text-2xl font-bold font-serif;
+}
+.cloth-price{
+    @apply lg:text-xl font-semibold text-gray-600;
+}
+.price-span{
+    @apply text-black font-semibold;
+}

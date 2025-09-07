@@ -6,7 +6,8 @@
     <title>Shopping</title>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind via CDN -->
+    <!--<script src="https://cdn.tailwindcss.com"></script>--> <!-- Tailwind via CDN -->
+    <link rel="stylesheet" href="./dish/output.css" />
 </head>
 <body  class="mx-auto p-4 bg-white h-screen" style="overflow: auto;">
      <div class="mt-4 mb-2">
@@ -37,10 +38,15 @@
                     <li><a class="hover:text-red-900 capitalize" href="#">shorts</a></li>
                 </ul>
             </div>
-            <ion-icon name="cart-outline"></ion-icon>
+            <div class="icon">
+                <a href="#">
+                    <ion-icon name="cart-outline"></ion-icon>
+                    <span class="input-nums">0</span>
+                </a>
+            </div>
             <div class="flex items-center gap-6">
                 <a href="./login.html"><button
-                        class="bg-black text-white px-5 py-2 rounded-md hover:shadow-lg">Login</button></a>
+                        class="bt-nav">Login</button></a>
                 <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
             </div>
         </nav>
@@ -50,68 +56,56 @@
         <div class="w-[92%] mx-auto py-4">
             <h1 class="flex justify-center font-bold text-2xl">TOPS</h1>
         </div><hr>
-        <div id="Tops" class="mx-4 sm:grid lg:grid-cols-4 grid-cols-2 gap-4">
+        <div id="Tops" class="product-js mx-4 sm:grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4">
             <!--first row-->
-            <div class="mt-6 w-full ">
-                <div class="bg-white rounded overflow-hidden shadow-md">
-                     <img class="sm:h-96 w-full" src="./image/skull.jpeg" alt="skull top">
+            <!--<div class="container-size">
+                <div class="sub-container-size">
+                     <img class="image-size" src="./image/skull.jpeg" alt="skull top">
                         <div class="text-center">
-                            <h3 class="lg:text-2xl   font-bold font-serif ">Skull Tee</h3>
-                            <p class="lg:text-xl font-semibold text-gray-600">Price: <span
-                                class="text-black font-bold">$50</span></p>
+                            <h3 class="cloth-name">Skull Tee</h3>
+                            <p class="cloth-price">Price: <span class="price-span">$50</span></p>
                                 <div class="mb-1">
-                                    <p class="add text-green-600 font-bold"></p>
-                                    <a href="shopping.html"
-                                        class="inline-block bg-black py-2 px-8 text-white rounded-md tracking-wider font-semibold hover:bg-white hover:text-black hover:shadow-lg">purchase</a>
-                                    <!--<a >Preview</a>-->
+                                    <p class="para-style"></p>
+                                    <button class="btn-outline">purchase</button>
                                 </div>
                         </div>
                 </div>
             </div>
-            <div class="mt-6 w-full ">
-                <div class="bg-white rounded overflow-hidden shadow-md">
-                     <img class="sm:h-96 w-full" src="./image/omw.jpg" alt="OMW top">
+            <div class="container-size ">
+                <div class="sub-container-size">
+                     <img class="image-size" src="./image/omw.jpg" alt="OMW top">
                         <div class="text-center">
-                            <h3 class="lg:text-2xl   font-bold font-serif ">Regular Fit Shortsleeve</h3>
-                            <p class="lg:text-xl font-semibold text-gray-600">Price: <span
-                                class="text-black font-bold">$50</span></p>
+                            <h3 class="cloth-name">Regular Fit Shortsleeve</h3>
+                            <p class="cloth-price">Price: <span class="price-span">$50</span></p>
                                 <div class="mb-1">
-                                    <p class="add text-green-600 font-bold"></p>
-                                    <a href="shopping.html"
-                                        class="inline-block bg-black py-2 px-8 text-white rounded-md tracking-wider font-semibold hover:bg-white hover:text-black hover:shadow-lg">Purchase</a>
-                                    <!--<a >Preview</a>-->
+                                    <p class="para-style"></p>
+                                    <button class="btn-outline">Purchase</button>
                                 </div>
                         </div>
                 </div>
             </div>
-            <div class="mt-6 w-full ">
-                <div class="bg-white rounded overflow-hidden shadow-md">
-                     <img class="sm:h-96 w-full" src="./image/under black.jpeg" alt="under black">
+            <div class="container-size ">
+                <div class="sub-container-size">
+                     <img class="image-size" src="./image/under black.jpeg" alt="under black">
                         <div class="text-center">
-                            <h3 class="lg:text-2xl   font-bold font-serif ">Underworld Tees</h3>
-                            <p class="lg:text-xl font-semibold text-gray-600">Price: <span
-                                class="text-black font-bold">$50</span></p>
+                            <h3 class="cloth-name ">Underworld Tees</h3>
+                            <p class="cloth-price">Price: <span class="price-span">$50</span></p>
                                 <div class="mb-1">
-                                    <p class="add text-green-600 font-bold"></p>
-                                    <a href="shopping.html"
-                                        class="inline-block bg-black py-2 px-8 text-white rounded-md tracking-wider font-semibold hover:bg-white hover:text-black hover:shadow-lg">Purchase</a>
-                                    <!--<a >Preview</a>-->
+                                    <p class="para-style"></p>
+                                    <button class="btn-outline">Purchase</button>
                                 </div>
                         </div>
                 </div>
             </div>
-            <div class="mt-6 w-full ">
-                <div class="bg-white rounded overflow-hidden shadow-md">
-                     <img class="sm:h-96 w-full" src="./image/omw update black.jpeg" alt="omw update black">
+            <div class="container-size">
+                <div class="sub-container-size">
+                     <img class="image-size" src="./image/omw update black.jpeg" alt="omw update black">
                         <div class="text-center">
-                            <h3 class="lg:text-2xl   font-bold font-serif ">Graphics Tees</h3>
-                            <p class="lg:text-xl font-semibold text-gray-600">Price: <span
-                                class="text-black font-bold">$50</span></p>
+                            <h3 class="cloth-name">Graphics Tees</h3>
+                            <p class="cloth-price">Price: <span class="price-span">$50</span></p>
                                 <div class="mb-1">
-                                    <p class="add text-green-600 font-bold"></p>
-                                    <a href="shopping.html"
-                                        class="inline-block bg-black py-2 px-8 text-white rounded-md tracking-wider font-semibold hover:bg-white hover:text-black hover:shadow-lg">Purchase</a>
-                                    <!--<a >Preview</a>-->
+                                    <p class="para-style"></p>
+                                    <button  class="btn-outline">Purchase</button>
                                 </div>
                         </div>
                 </div>
@@ -125,9 +119,8 @@
                                 class="text-black font-bold">$50</span></p>
                                 <div class="mb-1">
                                     <p class="add text-green-600 font-bold"></p>
-                                    <a href="shopping.html"
-                                        class="inline-block bg-black py-2 px-8 text-white rounded-md tracking-wider font-semibold hover:bg-white hover:text-black hover:shadow-lg">Purchase</a>
-                                    <!--<a >Preview</a>-->
+                                    <button 
+                                        class="btn-cart inline-block bg-black py-2 px-8 text-white rounded-md tracking-wider font-semibold hover:bg-white hover:text-black hover:shadow-lg">Purchase</button>
                                 </div>
                         </div>
                 </div>
@@ -141,9 +134,8 @@
                                 class="text-black font-bold">$50</span></p>
                                 <div class="mb-1">
                                     <p class="add text-green-600 font-bold"></p>
-                                    <a href="shopping.html"
-                                        class="inline-block bg-black py-2 px-8 text-white rounded-md tracking-wider font-semibold hover:bg-white hover:text-black hover:shadow-lg">Purchase</a>
-                                    <!--<a >Preview</a>-->
+                                    <button 
+                                        class="btn-cart inline-block bg-black py-2 px-8 text-white rounded-md tracking-wider font-semibold hover:bg-white hover:text-black hover:shadow-lg">Purchase</button>
                                 </div>
                         </div>
                 </div>
@@ -157,9 +149,8 @@
                                 class="text-black font-bold">$50</span></p>
                                 <div class="mb-1">
                                     <p class="add text-green-600 font-bold"></p>
-                                    <a href="shopping.html"
-                                        class="inline-block bg-black py-2 px-8 text-white rounded-md tracking-wider font-semibold hover:bg-white hover:text-black hover:shadow-lg">Purchase</a>
-                                    <!--<a >Preview</a>-->
+                                    <button 
+                                        class="btn-cart inline-block bg-black py-2 px-8 text-white rounded-md tracking-wider font-semibold hover:bg-white hover:text-black hover:shadow-lg">Purchase</button>
                                 </div>
                         </div>
                 </div>
@@ -173,13 +164,12 @@
                                 class="text-black font-bold">$50</span></p>
                                 <div class="mb-1">
                                     <p class="add text-green-600 font-bold"></p>
-                                    <a href="shopping.html"
-                                        class="inline-block bg-black py-2 px-8 text-white rounded-md tracking-wider font-semibold hover:bg-white hover:text-black hover:shadow-lg">Purchase</a>
-                                    <!--<a >Preview</a>-->
+                                    <button 
+                                        class="btn-cart inline-block bg-black py-2 px-8 text-white rounded-md tracking-wider font-semibold hover:bg-white hover:text-black hover:shadow-lg">Purchase</button>
                                 </div>
                         </div>
                 </div>
-            </div>
+            </div>-->
         </div>
         
     </main>
@@ -276,6 +266,6 @@
             navLinks.classList.toggle('top-[10%]')
         }
     </script>
-    <script src="./purchase.js"></script>
+    <script src="./data/product.js"></script>
 </body>
 </html>

@@ -9,7 +9,8 @@
     <title>OMW Luxury</title>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind via CDN -->
+    <!--<script src="https://cdn.tailwindcss.com"></script>--> <!-- Tailwind via CDN -->
+    <link rel="stylesheet" href="../dish/output.css" />
 
 </head>
 
@@ -31,9 +32,9 @@
             </div>
             <div class="flex items-center gap-6">
                 <a href="./signup.html"><button
-                        class="bg-black text-white px-5 py-2 rounded-md hover:bg-white hover:text-black hover:shadow-lg">SignUp</button></a>
+                        class="btn-outline">SignUp</button></a>
                 <a href="./login.html"><button
-                        class="bg-black text-white px-5 py-2 rounded-md hover:bg-white hover:text-black hover:shadow-lg">Login</button></a>
+                        class="btn-outline">Login</button></a>
                 <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
             </div>
         </nav>
@@ -258,7 +259,7 @@
             navLinks.classList.toggle('top-[9%]')
         }
     </script>
-    <script src="./purchase.js"></script>
+    <script src="./data/product.js"></script>
 </body>
 
 </html>
