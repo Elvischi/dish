@@ -53,7 +53,7 @@ products.forEach((product) => {
                             <h3 class="cloth-name">${product.name}</h3>
                             <p class="cloth-price">Price: <span class="price-span">$${(product.price / 100).toFixed(2)}</span></p>
                                 <div class="mb-1">
-                                    <p class="para-style"></p>
+                                    <p class="para-style added"></p>
                                     <button class="btn-outline js-add-to-cart" data-product-name ="${product.name}">Purchase</button>
                                 </div>
                         </div>
@@ -92,5 +92,13 @@ addToCart.forEach((button) => {
     });
     const cartQuantityHTML = document.querySelector('.cart-quantity');
     cartQuantityHTML.innerText = cartQuantity;
+    //Added to cart!
+     const addedMessage = button.parentElement.querySelector(".added");
+     if (addedMessage) {
+       addedMessage.innerText = "Added to cart!";
+       setTimeout(() => {
+         addedMessage.innerText = "";
+       }, 1000);
+    };
   });
 });
