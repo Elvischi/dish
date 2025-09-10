@@ -1073,17 +1073,6 @@
       box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     }
   }
-  &:hover {
-    @media (hover: hover) {
-      outline-style: var(--tw-outline-style);
-      outline-width: 2px;
-    }
-  }
-  &:hover {
-    @media (hover: hover) {
-      outline-color: var(--color-black);
-    }
-  }
 }
 .para-style {
   --tw-font-weight: var(--font-weight-semibold);
