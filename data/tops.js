@@ -38,7 +38,12 @@ export const products = [
   {
     image: "./image/wolf tee.jpg",
     name: "Wolf Tee",
-    price: 5000
-  }
+    price: 5000,
+  },
+  {
+    image: "./image/omwhat.jpg",
+    name: "Wolf Tee",
+    price: 5000,
+  },
 ];
 

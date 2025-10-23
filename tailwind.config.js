@@ -1,0 +1,52 @@
+module.exports = {
+  content: [
+    "./*.html",
+    "./**/*.html",
+    "./script/**/*.js",
+    "./src/*.{js,ts,jsx,tsx,css}",
+  ],
+  theme: {
+    extend: {},
+  },
+  safelist: [
+    // add any dynamic utility class names here if you create them at runtime
+    // explicit utilities used dynamically or in template strings
+    "hidden",
+    "block",
+    "flex",
+    "grid",
+    "grid-cols-2",
+    "md:grid-cols-3",
+    "lg:grid-cols-4",
+    "w-full",
+    "w-16",
+    "w-24",
+    "h-16",
+    "sm:h-96",
+    "object-cover",
+    "rounded",
+    "rounded-md",
+    "rounded-full",
+    "shadow",
+    "shadow-md",
+    "shadow-lg",
+    "hover:shadow-lg",
+    "bg-white",
+    "bg-black",
+    "text-white",
+    "text-black",
+    // your custom classes (keeps them if you use @apply)
+    "bt-nav",
+    "btn-outline",
+    "para-style",
+    "container-size",
+    "sub-container-size",
+    "image-size",
+    "cloth-name",
+    "cloth-price",
+    "price-span",
+    "clothes-style",
+    // Example: 'md:grid-cols-3', 'hidden', 'block'
+  ],
+  plugins: [],
+};
