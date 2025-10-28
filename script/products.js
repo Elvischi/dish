@@ -1,5 +1,5 @@
 
-import {cart} from "../data/cart.js";
+import { cart, addedToCart } from "../data/cart.js";
 import { products } from '../data/tops.js'; 
 
 
@@ -31,22 +31,7 @@ products.forEach((product) => {
 const productGrid = document.querySelector(".product-js");
 productGrid.innerHTML = productHTML;
 
-function addedToCart(productName) {
-  let matchedItem;
-  cart.forEach((item) => {
-    if (productName === item.productName) {
-      matchedItem = item;
-    }
-  });
-  if (matchedItem) {
-    matchedItem.quantity += 1;
-  } else {
-    cart.push({
-      productName: productName,
-      quantity: 1
-    });
-  }
-};
+
 
 function updateCartQuantity() {
     let cartQuantity = 0;
