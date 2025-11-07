@@ -33,14 +33,17 @@ productGrid.innerHTML = productHTML;
 
 
 
+
 function updateCartQuantity() {
     let cartQuantity = 0;
       cart.forEach((item) => {
         cartQuantity += item.quantity;
-      });
-       const cartQuantityHTML = document.querySelector(".cart-quantity");
+
+        const cartQuantityHTML = document.querySelector(".cart-quantity");
         cartQuantityHTML.innerText = cartQuantity;
-};
+      });
+       
+}
 //message:Added to cart!
 function cartAdded(addedMessage) {
   if (addedMessage) {
