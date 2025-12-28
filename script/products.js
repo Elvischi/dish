@@ -20,7 +20,7 @@ products.forEach((product) => {
                                     <p class="para-style added"></p>
                                     <button class="btn-outline js-add-to-cart" data-product-name ="${
                                       product.name
-                                    }">Add to cart</button>
+                                    }">Cart</button>
                                 </div>
                         </div>
                 </div>
