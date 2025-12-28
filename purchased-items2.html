@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Purchased Items</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!--<script src="https://cdn.tailwindcss.com"></script>-->
+    <!-- Tailwind via CDN -->
+    <link rel="stylesheet" href="./dish/output.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="flex justify-between items-center p-4 bg-white shadow-md">
+        <p class="font-semibold text-2xl"><a href="shopping.html">Shopping Room</a></p>
+        <h1 class="text-2xl font-bold">
+          Checkout (<span class="text-blue-500">3 Items</span>)
+        </h1>
+      </nav>
+    </header>
+    <main class="mt-6">
+      <h2 class="text-center text-2xl font-bold">Review your order</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 mt-5 gap-5">
+        <div class="grid grid-rows-1 list-js">
+          <!-- <div class="p-4 bg-white shadow-lg">
+            <p class="text-green-500 font-bold">
+              Delivery date: Tuesday, June 21
+            </p>
+            <div class="grid grid-cols-3 gap-8 mt-3">
+              <div>
+                <img src="./image/omw.jpg" class="rounded-2xl" />
+              </div>
+              <div>
+                <h2 class="font-semibold capitalize">omw update</h2>
+                <p class="text-red-400">$50.00</p>
+                <p>
+                  Quantity:1 <span class="text-blue-400">Update</span>
+                  <span class="text-blue-400">Delete</span>
+                </p>
+              </div>
+              <div>
+                <h2 class="font-bold">Choose a delivery Option:</h2>
+                <div class="flex space-x-3">
+                  <input type="radio" />
+                  <p>
+                    <span class="text-green-600 font-bold"
+                      >Tuesday, June 21</span
+                    ><br />
+                    FREE Shipping
+                  </p>
+                </div>
+                <div class="flex space-x-3">
+                  <input type="radio" />
+                  <p>
+                    <span class="text-green-600 font-bold"
+                      >Wednesday, June 15</span
+                    ><br />
+                    $4.99 - Shipping
+                  </p>
+                </div>
+                <div class="flex space-x-3">
+                  <input type="radio" />
+                  <p>
+                    <span class="text-green-600 font-bold">Monday, June 13</span
+                    ><br />
+                    $9.99 - Shipping
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+
+        <!--right side-->
+        <div class="p-4 bg-white shadow-lg">
+          <p class="text-black-500 font-bold">Order Summary</p>
+          <div class="flex mt-4">
+            <p>Items (3):</p>
+            <span class="ml-auto">$42.75</span>
+          </div>
+          <div class="flex mt-4">
+            <p>Shipping & handling:</p>
+            <span class="ml-auto">$4.99</span>
+          </div>
+          <div class="flex mt-4">
+            <p>Total before tax:</p>
+            <span class="ml-auto">$47.74</span>
+          </div>
+          <div class="flex mt-4">
+            <p>Estimated tax (10%):</p>
+            <span class="ml-auto">$4.77</span>
+          </div>
+          <hr />
+          <div class="flex mt-4 text-black font-extrabold">
+            <p>Order Total:</p>
+            <span class="ml-auto">$52.51</span>
+          </div>
+          <button
+            class="w-full bg-black text-white py-3 px-4 rounded tracking-normal font-semibold hover:bg-gray-400 hover:text-black"
+          >
+            Place your order
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="../script/purchased-items.js"></script>
+  </body>
+</html>
