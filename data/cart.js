@@ -50,3 +50,4 @@ export function deleteFromCart(productName) {
 
   saveToStorage();
 }
+// Generate purchased items list
