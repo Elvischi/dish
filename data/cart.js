@@ -19,6 +19,7 @@ function saveToStorage() {
   localStorage.setItem('cart', JSON.stringify(cart));
 };
 
+//Add To Cart
 export function addedToCart(productName) {
   let matchedItem;
   cart.forEach((item) => {
@@ -38,16 +39,21 @@ export function addedToCart(productName) {
   saveToStorage();
 };
 
-export function deleteFromCart(productName) {
+//Delete From Cart
+export function removeFromCart(productName) {
   const newCart = [];
 
-  cart.forEach((cartItem) => {
-    if (cartItem.productName !== productName) {
-      newCart.push(cartItem);
+  cart.forEach((deleteCartItem) => {
+    if (deleteCartItem.productName !== productName) {
+      newCart.push(deleteCartItem);
     }
-  })
+  });
+
   cart = newCart;
 
   saveToStorage();
-}
+};
+  
+
+
 // Generate purchased items list
