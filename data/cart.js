@@ -54,6 +54,15 @@ export function removeFromCart(productName) {
   saveToStorage();
 };
   
-
-
-// Generate purchased items list
+//cart increment
+export function incrementCartItem(productName) {
+  cart.forEach((item) => {
+    if (item.productName === productName) {
+      if(item.quantity >= 10) {
+        return;
+      }
+      item.quantity += 1;
+    }
+  });
+  saveToStorage();
+};

@@ -1,4 +1,4 @@
-import { cart, removeFromCart } from "../data/cart.js";
+import { cart, removeFromCart, incrementCartItem } from "../data/cart.js";
 import { products } from "../data/tops.js";
 
 let cartSummaryHTML = "";
@@ -17,7 +17,9 @@ cart.forEach((cartItem) => {
   
 
   cartSummaryHTML += `
-    <div class="p-4 bg-white shadow-lg js-cart-item-container" data-product-name="${matchingProduct.name}">
+    <div class="p-4 bg-white shadow-lg js-cart-item-container" data-product-name="${
+      matchingProduct.name
+    }">
       <p class="text-green-500 font-bold">
         Delivery date: Tuesday, June 21
       </p>
@@ -31,11 +33,16 @@ cart.forEach((cartItem) => {
             2
           )}</p>
           <p>
-            Quantity:${
-              cartItem.quantity
-            } <span class="text-blue-400 cursor-pointer">-</span>
-            <span class="text-blue-400 cursor-pointer">+</span><br />
-            <span class="text-blue-400 cursor-pointer js-delete-link" data-product-name="${matchingProduct.name}">Delete</span>
+            Quantity:<span class="js-quantity" data-product-name='${matchingProduct.name}'>${
+                  cartItem.quantity
+                }</span>
+             <span class="text-blue-400 cursor-pointer js-minus-link">-</span>
+            <span class="text-blue-400 cursor-pointer js-add-link" data-product-name='${
+              matchingProduct.name
+            }'>+</span><br />
+            <span class="text-blue-400 cursor-pointer js-delete-link" data-product-name="${
+              matchingProduct.name
+            }">Delete</span>
           </p>
         </div>
         <div>
@@ -89,7 +96,21 @@ deleteItem.forEach((link) => {
     const deleteName = link.dataset.productName;
     removeFromCart(deleteName); 
     const container = link.closest('.js-cart-item-container');
-
     container.remove();
    });
+});
+// add item
+const addItem = document.querySelectorAll(".js-add-link");
+addItem.forEach((addbtn) => {
+  addbtn.addEventListener('click', () => {
+    const addLink = addbtn.dataset.productName;
+    incrementCartItem(addLink);
+    const addUpBtn = document.querySelector(`.js-quantity[data-product-name='${addLink}']`);
+    let currentQuantity = Number(addUpBtn.textContent);
+    if (currentQuantity < 10) {
+      quantitySpan.textContent = currentQuantity + 1;
+    } else {
+      alert("Maximum quantity reached");
+    }
   });
+});
