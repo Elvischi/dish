@@ -1,4 +1,9 @@
-import { cart, removeFromCart, incrementCartItem } from "../data/cart.js";
+import {
+  cart,
+  removeFromCart,
+  incrementCartItem,
+  decrementCartItem,
+} from "../data/cart.js";
 import { products } from "../data/tops.js";
 
 let cartSummaryHTML = "";
@@ -33,10 +38,12 @@ cart.forEach((cartItem) => {
             2
           )}</p>
           <p>
-            Quantity:<span class="js-quantity" data-product-name='${matchingProduct.name}'>${
-                  cartItem.quantity
-                }</span>
-             <span class="text-blue-400 cursor-pointer js-minus-link">-</span>
+            Quantity:<span class="js-quantity" data-product-name='${
+              matchingProduct.name
+            }'>${cartItem.quantity}</span>
+             <span class="text-blue-400 cursor-pointer js-minus-link" data-product-name='${
+               matchingProduct.name
+             }'>-</span>
             <span class="text-blue-400 cursor-pointer js-add-link" data-product-name='${
               matchingProduct.name
             }'>+</span><br />
@@ -97,6 +104,8 @@ deleteItem.forEach((link) => {
     removeFromCart(deleteName); 
     const container = link.closest('.js-cart-item-container');
     container.remove();
+
+    updateCalculatedItem(cart);
    });
 });
 // add item
@@ -108,9 +117,42 @@ addItem.forEach((addbtn) => {
     const addUpBtn = document.querySelector(`.js-quantity[data-product-name='${addLink}']`);
     let currentQuantity = Number(addUpBtn.textContent);
     if (currentQuantity < 10) {
-      quantitySpan.textContent = currentQuantity + 1;
+      addUpBtn.textContent = currentQuantity + 1;
+      updateCalculatedItem(cart);
     } else {
       alert("Maximum quantity reached");
     }
   });
 });
+//minus item
+const minusItem = document.querySelectorAll(".js-minus-link");
+minusItem.forEach((minusItem) => {
+  minusItem.addEventListener('click', () => {
+    const minusQuan = minusItem.dataset.productName;
+    decrementCartItem(minusQuan);
+    
+    const decrementItem = document.querySelector(`.js-quantity[data-product-name='${minusQuan}']`);
+    let decrementQuan = Number(decrementItem.textContent);
+    if (decrementQuan > 1) {
+      decrementItem.textContent = decrementQuan - 1;
+      updateCalculatedItem(cart);
+    } else {
+      alert("Minimum quantity is 1");
+    }
+  });
+});
+
+//Header total
+function calculateTotal(cart) {
+  return cart.reduce((total, cart) => {
+    return total + cart.quantity;
+  }, 0);
+};
+
+function updateCalculatedItem(cart) {
+  const totalItems = calculateTotal(cart);
+
+  const updateItem = document.querySelector(".purchase-num");
+  updateItem.innerText = totalItems
+}
+updateCalculatedItem(cart);

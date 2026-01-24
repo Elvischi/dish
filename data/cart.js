@@ -28,7 +28,7 @@ export function addedToCart(productName) {
     }
   });
   if (matchedItem) {
-    matchedItem.quantity += 1;
+    alert("Already Added To Your Cart")
   } else {
     cart.push({
       productName: productName,
@@ -66,3 +66,14 @@ export function incrementCartItem(productName) {
   });
   saveToStorage();
 };
+
+//cart decrement
+export function decrementCartItem(productName) {
+  cart.forEach((decrement) => {
+    if (decrement.productName === productName) {
+      decrement.quantity -= 1;
+    }
+  });
+  saveToStorage();
+};
+
